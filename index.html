@@ -6,33 +6,59 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>performance api</title>
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
 
   <style>
-    html, body, .container {
+    body {
+      background: linear-gradient(to bottom, #ddf0f6 0%, #f1f9fc 65%, #f1f9fc 100%);
+    }
+    .container {
+      padding-top: 5vh;
+      padding-bottom: 5vh;
+    }
+    .u-full-width {
+      position: relative;
+      width: 100%;
+      height: 0;
+      padding-bottom: 56.25%;
+    }
+    .u-full-width iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
       width: 100%;
       height: 100%;
     }
-    .container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    img {
+      display: block;
+      max-width: 100%;
     }
   </style>
+
 </head>
 <body>
   <div class="container">
     <div class="row">
-      <div class="col">
-        <iframe width="1000" height="500" src="https://www.youtube.com/embed/SuUlHD4sBB4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <div class="twelve columns">
+        <h3>放一張圖片</h3>
+        <img src="http://placekitten.com/1140/500">
+        <hr>
+        <h3>嵌一個youtube</h3>
+        <div class="u-full-width">
+          <iframe src="https://www.youtube.com/embed/hrxR6sFiq04" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+        <hr>
+        <h3>嵌一個vimeo</h3>
+        <div class="u-full-width">
+          <iframe src="https://player.vimeo.com/video/11936324" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          <p><a href="https://vimeo.com/11936324">A Cat&#039;s Parade</a> from <a href="https://vimeo.com/dancingdog">Dancing Dog Productions</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+        </div>
       </div>
     </div>
   </div>
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
   
   <script src="performance-console.js"></script>
 </body>
