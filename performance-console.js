@@ -1,4 +1,4 @@
-window.onload = function() {
+function performanceConsole() {
   const t = performance.timing;
 
   console.log('%c頁面總耗時如下：', 'font-size: 18px; font-weight: bold; color: #E65100');
@@ -45,4 +45,8 @@ window.onload = function() {
   console.log('');
   console.log('%c各檔案耗時如下：', 'font-size: 18px; font-weight: bold; color: #E65100');
   console.table(endArray);
+};
+
+window.onload = function() {
+  performanceConsole();
 }
